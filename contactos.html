@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Contactos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!--modern normalize -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!--iconos SVG-->
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/dead64e28a/UntitledProject/style-svg.css">
+    <script defer src="https://i.icomoon.io/public/temp/dead64e28a/UntitledProject/svgxuse.js"></script>
+</head>
+
+<body>
+    <section class="form_box">
+        <div class="form_close">
+            <button class="form_button" type="button">
+                <svg class="form_svg">
+                    <use href="./images/svg/icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+
+        <h2 class="form_title">Deje sus datos, nos contactaremos con usted</h2>
+        <form class="form_contact" name="Information-contact">
+        
+        
+            <label class="form_containerinput">Nombre
+
+                <input class="form_input text" type="text" id="name_person" name="name_person" autofocus required minlength="4"
+                    pattern="[a-zA-Z]+">
+                <svg class="form_svg input">
+                    <use href="./images/svg/icon.svg#icon-name_person"></use>
+                </svg>
+            
+            </label>
+
+
+            <label class="form_containerinput" >Telefóno
+                <input class="form_input" type="text" id="phone_person" name="phone_person" required minlength="10"
+                pattern="[0-9]+">
+                <svg class="form_svg input">
+                    <use href="./images/svg/icon.svg#icon-phone"></use>
+                </svg>
+            </label>
+           
+
+            <label class="form_containerinput">E-mail
+                <input class="form_input" type="text" id="email_person" name="email_person" placeholder="@ejemplo.com"
+                required>
+                <svg class="form_svg input">
+                    <use href="./images/svg/icon.svg#icon-message"></use>
+                </svg>
+
+            </label>
+            
+
+            <label class="form_containerinput" for="comentaries">Comentarios
+                <textarea class="form_ input form_comentaries" name="comentaries" id="comentaries" cols="30" rows="10"
+                placeholder="Introduzca el texto"></textarea>
+            </label>
+           
+
+            <label class="form_checkbox">
+                <input type="checkbox" name="hobby" value="music" required />
+                Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones
+            </label>
+
+            <button class="form_submit" type="submit">Enviar</button>
+
+            <a href="index.html">Volver</a>
+
+        </form>
+    </section>
+</body>
+
+</html>
